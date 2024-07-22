@@ -1,0 +1,12 @@
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\bin\Debug\QuanLyQuanCafee.exe.config
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\bin\Debug\QuanLyQuanCafee.exe
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\bin\Debug\QuanLyQuanCafee.pdb
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.csproj.AssemblyReference.cache
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.Login.resources
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.Properties.Resources.resources
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.csproj.GenerateResource.cache
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.csproj.CoreCompileInputs.cache
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.exe
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.pdb
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.fTableManager.resources
+C:\Users\Tram\source\repos\QuanLyQuanCafee\QuanLyQuanCafee\obj\Debug\QuanLyQuanCafee.Form2.resources
