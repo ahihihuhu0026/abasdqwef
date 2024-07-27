@@ -1,3 +1,5 @@
 ### Cafe Management System
 
-<img src="./cafe_2024-07-26T19_10_53.729Z.png" width="" height=""/>
+<video src="./assets/2024-07-28 01-57-09.mp4" width="320" height="200" controls preload></video>
+
+<img src="./assets/db_schema.png" width="" height=""/>
