@@ -1,5 +1,5 @@
 ### Cafe Management System
 
-<video src="./assets/2024-07-28 01-57-09.mp4" width="320" height="200" controls preload></video>
+<video src="https://github.com/DNAnh01/assets/raw/main/personal/2024-07-28%2001-57-09.mov" width="" height="" autoplay controls></video>
 
-<img src="./assets/db_schema.png" width="" height=""/>
+<img src="db_schema.png" width="" height=""/>

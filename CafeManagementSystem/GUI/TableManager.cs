@@ -34,5 +34,7 @@ namespace CafeManagementSystem.GUI
             Admin f = new Admin();
             f.ShowDialog();
         }
+
+
     }
 }

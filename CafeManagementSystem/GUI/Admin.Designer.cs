@@ -43,6 +43,15 @@
             this.txbSearchFoodName = new System.Windows.Forms.TextBox();
             this.btnSearchFood = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
+            this.panel31 = new System.Windows.Forms.Panel();
+            this.numericUpDownFoodPrice = new System.Windows.Forms.NumericUpDown();
+            this.label18 = new System.Windows.Forms.Label();
+            this.panel30 = new System.Windows.Forms.Panel();
+            this.label17 = new System.Windows.Forms.Label();
+            this.textBoxFoodCategory = new System.Windows.Forms.TextBox();
+            this.panel29 = new System.Windows.Forms.Panel();
+            this.label16 = new System.Windows.Forms.Label();
+            this.textBoxFoodName = new System.Windows.Forms.TextBox();
             this.panel28 = new System.Windows.Forms.Panel();
             this.label15 = new System.Windows.Forms.Label();
             this.textBoxFoodId = new System.Windows.Forms.TextBox();
@@ -117,15 +126,6 @@
             this.panel7 = new System.Windows.Forms.Panel();
             this.label3 = new System.Windows.Forms.Label();
             this.txbFoodId = new System.Windows.Forms.TextBox();
-            this.panel29 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
-            this.textBoxFoodName = new System.Windows.Forms.TextBox();
-            this.panel30 = new System.Windows.Forms.Panel();
-            this.label17 = new System.Windows.Forms.Label();
-            this.textBoxFoodCategory = new System.Windows.Forms.TextBox();
-            this.panel31 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
-            this.numericUpDownFoodPrice = new System.Windows.Forms.NumericUpDown();
             this.tcAdmin.SuspendLayout();
             this.tpBill.SuspendLayout();
             this.panel2.SuspendLayout();
@@ -134,6 +134,10 @@
             this.tpFood.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
+            this.panel31.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFoodPrice)).BeginInit();
+            this.panel30.SuspendLayout();
+            this.panel29.SuspendLayout();
             this.panel28.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel3.SuspendLayout();
@@ -164,10 +168,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.nmFoodPrice)).BeginInit();
             this.panel8.SuspendLayout();
             this.panel7.SuspendLayout();
-            this.panel29.SuspendLayout();
-            this.panel30.SuspendLayout();
-            this.panel31.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFoodPrice)).BeginInit();
             this.SuspendLayout();
             // 
             // tcAdmin
@@ -329,6 +329,102 @@
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(375, 528);
             this.panel5.TabIndex = 1;
+            // 
+            // panel31
+            // 
+            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
+            this.panel31.Controls.Add(this.numericUpDownFoodPrice);
+            this.panel31.Controls.Add(this.label18);
+            this.panel31.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.panel31.Location = new System.Drawing.Point(17, 215);
+            this.panel31.Name = "panel31";
+            this.panel31.Size = new System.Drawing.Size(344, 45);
+            this.panel31.TabIndex = 10;
+            // 
+            // numericUpDownFoodPrice
+            // 
+            this.numericUpDownFoodPrice.Location = new System.Drawing.Point(148, 6);
+            this.numericUpDownFoodPrice.Maximum = new decimal(new int[] {
+            1000000,
+            0,
+            0,
+            0});
+            this.numericUpDownFoodPrice.Name = "numericUpDownFoodPrice";
+            this.numericUpDownFoodPrice.Size = new System.Drawing.Size(192, 25);
+            this.numericUpDownFoodPrice.TabIndex = 8;
+            this.numericUpDownFoodPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            // 
+            // label18
+            // 
+            this.label18.AutoSize = true;
+            this.label18.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label18.Location = new System.Drawing.Point(3, 5);
+            this.label18.Name = "label18";
+            this.label18.Size = new System.Drawing.Size(46, 21);
+            this.label18.TabIndex = 7;
+            this.label18.Text = "Giá:";
+            // 
+            // panel30
+            // 
+            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
+            this.panel30.Controls.Add(this.label17);
+            this.panel30.Controls.Add(this.textBoxFoodCategory);
+            this.panel30.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.panel30.Location = new System.Drawing.Point(17, 148);
+            this.panel30.Name = "panel30";
+            this.panel30.Size = new System.Drawing.Size(344, 45);
+            this.panel30.TabIndex = 9;
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label17.Location = new System.Drawing.Point(3, 5);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(105, 21);
+            this.label17.TabIndex = 7;
+            this.label17.Text = "Danh mục:";
+            // 
+            // textBoxFoodCategory
+            // 
+            this.textBoxFoodCategory.BackColor = System.Drawing.Color.White;
+            this.textBoxFoodCategory.Location = new System.Drawing.Point(149, 5);
+            this.textBoxFoodCategory.Multiline = true;
+            this.textBoxFoodCategory.Name = "textBoxFoodCategory";
+            this.textBoxFoodCategory.ReadOnly = true;
+            this.textBoxFoodCategory.Size = new System.Drawing.Size(192, 37);
+            this.textBoxFoodCategory.TabIndex = 6;
+            // 
+            // panel29
+            // 
+            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
+            this.panel29.Controls.Add(this.label16);
+            this.panel29.Controls.Add(this.textBoxFoodName);
+            this.panel29.ForeColor = System.Drawing.Color.SaddleBrown;
+            this.panel29.Location = new System.Drawing.Point(16, 83);
+            this.panel29.Name = "panel29";
+            this.panel29.Size = new System.Drawing.Size(344, 45);
+            this.panel29.TabIndex = 8;
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label16.Location = new System.Drawing.Point(3, 5);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(93, 21);
+            this.label16.TabIndex = 7;
+            this.label16.Text = "Tên món:";
+            // 
+            // textBoxFoodName
+            // 
+            this.textBoxFoodName.BackColor = System.Drawing.Color.White;
+            this.textBoxFoodName.Location = new System.Drawing.Point(149, 5);
+            this.textBoxFoodName.Multiline = true;
+            this.textBoxFoodName.Name = "textBoxFoodName";
+            this.textBoxFoodName.ReadOnly = true;
+            this.textBoxFoodName.Size = new System.Drawing.Size(192, 37);
+            this.textBoxFoodName.TabIndex = 6;
             // 
             // panel28
             // 
@@ -929,6 +1025,7 @@
             this.dtgvAccount.RowTemplate.Height = 24;
             this.dtgvAccount.Size = new System.Drawing.Size(625, 524);
             this.dtgvAccount.TabIndex = 0;
+            this.dtgvAccount.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dtgvAccount_CellContentClick);
             // 
             // panel22
             // 
@@ -1089,102 +1186,6 @@
             this.txbFoodId.Size = new System.Drawing.Size(224, 37);
             this.txbFoodId.TabIndex = 6;
             // 
-            // panel29
-            // 
-            this.panel29.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
-            this.panel29.Controls.Add(this.label16);
-            this.panel29.Controls.Add(this.textBoxFoodName);
-            this.panel29.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.panel29.Location = new System.Drawing.Point(16, 83);
-            this.panel29.Name = "panel29";
-            this.panel29.Size = new System.Drawing.Size(344, 45);
-            this.panel29.TabIndex = 8;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.Location = new System.Drawing.Point(3, 5);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(93, 21);
-            this.label16.TabIndex = 7;
-            this.label16.Text = "Tên món:";
-            // 
-            // textBoxFoodName
-            // 
-            this.textBoxFoodName.BackColor = System.Drawing.Color.White;
-            this.textBoxFoodName.Location = new System.Drawing.Point(149, 5);
-            this.textBoxFoodName.Multiline = true;
-            this.textBoxFoodName.Name = "textBoxFoodName";
-            this.textBoxFoodName.ReadOnly = true;
-            this.textBoxFoodName.Size = new System.Drawing.Size(192, 37);
-            this.textBoxFoodName.TabIndex = 6;
-            // 
-            // panel30
-            // 
-            this.panel30.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
-            this.panel30.Controls.Add(this.label17);
-            this.panel30.Controls.Add(this.textBoxFoodCategory);
-            this.panel30.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.panel30.Location = new System.Drawing.Point(17, 148);
-            this.panel30.Name = "panel30";
-            this.panel30.Size = new System.Drawing.Size(344, 45);
-            this.panel30.TabIndex = 9;
-            // 
-            // label17
-            // 
-            this.label17.AutoSize = true;
-            this.label17.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label17.Location = new System.Drawing.Point(3, 5);
-            this.label17.Name = "label17";
-            this.label17.Size = new System.Drawing.Size(105, 21);
-            this.label17.TabIndex = 7;
-            this.label17.Text = "Danh mục:";
-            // 
-            // textBoxFoodCategory
-            // 
-            this.textBoxFoodCategory.BackColor = System.Drawing.Color.White;
-            this.textBoxFoodCategory.Location = new System.Drawing.Point(149, 5);
-            this.textBoxFoodCategory.Multiline = true;
-            this.textBoxFoodCategory.Name = "textBoxFoodCategory";
-            this.textBoxFoodCategory.ReadOnly = true;
-            this.textBoxFoodCategory.Size = new System.Drawing.Size(192, 37);
-            this.textBoxFoodCategory.TabIndex = 6;
-            // 
-            // panel31
-            // 
-            this.panel31.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(250)))), ((int)(((byte)(240)))));
-            this.panel31.Controls.Add(this.numericUpDownFoodPrice);
-            this.panel31.Controls.Add(this.label18);
-            this.panel31.ForeColor = System.Drawing.Color.SaddleBrown;
-            this.panel31.Location = new System.Drawing.Point(17, 215);
-            this.panel31.Name = "panel31";
-            this.panel31.Size = new System.Drawing.Size(344, 45);
-            this.panel31.TabIndex = 10;
-            // 
-            // label18
-            // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Arial", 10.8F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.Location = new System.Drawing.Point(3, 5);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(46, 21);
-            this.label18.TabIndex = 7;
-            this.label18.Text = "Giá:";
-            // 
-            // numericUpDownFoodPrice
-            // 
-            this.numericUpDownFoodPrice.Location = new System.Drawing.Point(148, 6);
-            this.numericUpDownFoodPrice.Maximum = new decimal(new int[] {
-            1000000,
-            0,
-            0,
-            0});
-            this.numericUpDownFoodPrice.Name = "numericUpDownFoodPrice";
-            this.numericUpDownFoodPrice.Size = new System.Drawing.Size(192, 25);
-            this.numericUpDownFoodPrice.TabIndex = 8;
-            this.numericUpDownFoodPrice.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -1204,6 +1205,13 @@
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
+            this.panel31.ResumeLayout(false);
+            this.panel31.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFoodPrice)).EndInit();
+            this.panel30.ResumeLayout(false);
+            this.panel30.PerformLayout();
+            this.panel29.ResumeLayout(false);
+            this.panel29.PerformLayout();
             this.panel28.ResumeLayout(false);
             this.panel28.PerformLayout();
             this.panel4.ResumeLayout(false);
@@ -1245,13 +1253,6 @@
             this.panel8.PerformLayout();
             this.panel7.ResumeLayout(false);
             this.panel7.PerformLayout();
-            this.panel29.ResumeLayout(false);
-            this.panel29.PerformLayout();
-            this.panel30.ResumeLayout(false);
-            this.panel30.PerformLayout();
-            this.panel31.ResumeLayout(false);
-            this.panel31.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.numericUpDownFoodPrice)).EndInit();
             this.ResumeLayout(false);
 
         }

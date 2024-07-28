@@ -103,14 +103,14 @@
             // thôngTinCaNhânToolStripMenuItem
             // 
             this.thôngTinCaNhânToolStripMenuItem.Name = "thôngTinCaNhânToolStripMenuItem";
-            this.thôngTinCaNhânToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.thôngTinCaNhânToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.thôngTinCaNhânToolStripMenuItem.Text = "Thông tin cá nhân";
             this.thôngTinCaNhânToolStripMenuItem.Click += new System.EventHandler(this.thôngTinCaNhânToolStripMenuItem_Click);
             // 
             // đăngXuâtToolStripMenuItem
             // 
             this.đăngXuâtToolStripMenuItem.Name = "đăngXuâtToolStripMenuItem";
-            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(224, 26);
+            this.đăngXuâtToolStripMenuItem.Size = new System.Drawing.Size(218, 26);
             this.đăngXuâtToolStripMenuItem.Text = "Đăng xuất";
             this.đăngXuâtToolStripMenuItem.Click += new System.EventHandler(this.đăngXuâtToolStripMenuItem_Click);
             // 
@@ -274,6 +274,7 @@
             this.flpTable.Name = "flpTable";
             this.flpTable.Size = new System.Drawing.Size(670, 662);
             this.flpTable.TabIndex = 6;
+
             // 
             // TableManager
             // 
