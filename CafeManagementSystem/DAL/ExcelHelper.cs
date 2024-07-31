@@ -11,7 +11,8 @@ namespace CafeManagementSystem.DAL
     class ExcelHelper
     {
         private List<Account> accounts;
-        private string filePath = "DATABASE.XLSX";
+        // private string filePath = "DATABASE.XLSX";
+        string filePath = Path.Combine(Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.FullName, "DATABASE.xlsx");
 
         private static ExcelHelper _Instance;
         public static ExcelHelper Instance
@@ -25,7 +26,7 @@ namespace CafeManagementSystem.DAL
             }
             private set { }
         }
-        
+
 
         private ExcelHelper()
         {
@@ -43,21 +44,21 @@ namespace CafeManagementSystem.DAL
                 var sheet = package.Workbook.Worksheets[sheetName] ?? package.Workbook.Worksheets.Add(sheetName);
 
                 // Ghi tiêu đề
-                sheet.Cells[1, 1].Value = "Id";
-                sheet.Cells[1, 2].Value = "DisplayName";
-                sheet.Cells[1, 3].Value = "UserName";
-                sheet.Cells[1, 4].Value = "Password";
-                sheet.Cells[1, 5].Value = "Type";
+                sheet.Cells[1, 1].Value = "id";
+                sheet.Cells[1, 2].Value = "displayName";
+                sheet.Cells[1, 3].Value = "userName";
+                sheet.Cells[1, 4].Value = "password";
+                sheet.Cells[1, 5].Value = "type";
 
                 // Ghi dữ liệu
                 for (int i = 0; i < accounts.Count; i++)
                 {
                     var acc = accounts[i];
-                    sheet.Cells[i + 2, 1].Value = acc.Id;
-                    sheet.Cells[i + 2, 2].Value = acc.DisplayName;
-                    sheet.Cells[i + 2, 3].Value = acc.UserName;
-                    sheet.Cells[i + 2, 4].Value = acc.PassWord;
-                    sheet.Cells[i + 2, 5].Value = acc.Type;
+                    sheet.Cells[i + 2, 1].Value = acc.id;
+                    sheet.Cells[i + 2, 2].Value = acc.displayName;
+                    sheet.Cells[i + 2, 3].Value = acc.userName;
+                    sheet.Cells[i + 2, 4].Value = acc.passWord;
+                    sheet.Cells[i + 2, 5].Value = acc.type;
                 }
 
                 // Lưu file
@@ -70,12 +71,12 @@ namespace CafeManagementSystem.DAL
             updateSheetAccount();
         }
 
-        
+
 
 
         public List<Account> LoadAccountData()
         {
-            
+
             string sheetName = "Account";
             var listAccounts = new List<Account>();
             FileInfo fileInfo = new FileInfo(filePath);
@@ -111,31 +112,31 @@ namespace CafeManagementSystem.DAL
 
         public Account getAccount(string username, string password)
         {
-            return accounts.FirstOrDefault(a => a.UserName == username && a.PassWord == password);
+            return accounts.FirstOrDefault(a => a.userName == username && a.passWord == password);
         }
 
         public Account getAccountByUserName(string username)
         {
-            return accounts.FirstOrDefault(a => a.UserName == username);
+            return accounts.FirstOrDefault(a => a.userName == username);
         }
 
         public void EditDetailName(string usernameToEdit, string nameDisplayNew)
         {
-            var accountToEdit = accounts.FirstOrDefault(a => a.UserName == usernameToEdit);
+            var accountToEdit = accounts.FirstOrDefault(a => a.userName == usernameToEdit);
 
             if (accountToEdit != null)
             {
-                accountToEdit.DisplayName = nameDisplayNew;
+                accountToEdit.displayName = nameDisplayNew;
             }
         }
 
         public void EditAccount(string usernameToEdit, string nameNew, string passwordNew)
         {
-            var accountToEdit = accounts.FirstOrDefault(a => a.UserName == usernameToEdit);
+            var accountToEdit = accounts.FirstOrDefault(a => a.userName == usernameToEdit);
             if (accountToEdit != null)
             {
-                accountToEdit.DisplayName = nameNew;
-                accountToEdit.PassWord = passwordNew;
+                accountToEdit.displayName = nameNew;
+                accountToEdit.passWord = passwordNew;
             }
         }
 

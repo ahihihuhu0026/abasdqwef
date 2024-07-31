@@ -35,7 +35,7 @@ namespace CafeManagementSystem.BLL
 
             if (account != null)
             {
-                return account.UserName;
+                return account.userName;
             }
             else
             {

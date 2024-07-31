@@ -27,9 +27,9 @@ namespace CafeManagementSystem.GUI
         private void InitView(string username)
         {
             var account = AccountBLL.Instance.getAccountForEdit(username);
-            //txbDisplayName.Text = account.DisplayName;
+            //txbDisplayName.Text = account.displayName;
             txbUserName.Text = username;
-            txbDisplayName.Text = account.DisplayName;
+            txbDisplayName.Text = account.displayName;
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -42,7 +42,7 @@ namespace CafeManagementSystem.GUI
             string txtUserName = txbUserName.Text.Trim().ToString();
             string txtDisplayName = txbDisplayName.Text.Trim().ToString();
             string txtPassword = txbPassWord.Text.Trim().ToString();
-            if(txtPassword.Length == 0 )
+            if (txtPassword.Length == 0)
             {
                 //only edit namedisplay
                 AccountBLL.Instance.editDetailNameDisplay(txtUserName, txtDisplayName);
@@ -53,10 +53,10 @@ namespace CafeManagementSystem.GUI
                 //edit password
                 string passwordNew = txbNewPass.Text.Trim().ToString();
                 string re_enterPass = txbReEnterPass.Text.Trim().ToString();
-                if(passwordNew.Length != 0 && passwordNew == re_enterPass)
+                if (passwordNew.Length != 0 && passwordNew == re_enterPass)
                 {
                     string username = AccountBLL.Instance.getUserNameForLogin(txtUserName, txtPassword);
-                    if(username != "")
+                    if (username != "")
                     {
                         //allow edit
                         AccountBLL.Instance.EditProfile(txtUserName, txtDisplayName, passwordNew);
@@ -73,7 +73,7 @@ namespace CafeManagementSystem.GUI
                 {
                     MessageBox.Show("Mật khẩu không khớp");
                 }
-                
+
             }
         }
     }
