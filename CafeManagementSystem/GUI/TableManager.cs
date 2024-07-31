@@ -1,4 +1,5 @@
-﻿using System;
+﻿using CafeManagementSystem.DTO;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -10,10 +11,15 @@ using System.Windows.Forms;
 
 namespace CafeManagementSystem.GUI
 {
-    public partial class TableManager : Form
+    partial class TableManager : Form
     {
-        public TableManager()
+        private string username;
+        public TableManager(string username)
         {
+            InitializeComponent();
+            this.username = username;
+        }
+        public TableManager() {
             InitializeComponent();
         }
 
@@ -25,7 +31,7 @@ namespace CafeManagementSystem.GUI
 
         private void thôngTinCaNhânToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            AccountProfile f = new AccountProfile();
+            AccountProfile f = new AccountProfile(username);
             f.ShowDialog();
         }
 
